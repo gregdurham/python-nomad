@@ -19,7 +19,7 @@ class Job(base.Endpoint):
         if jobId:
             resp = self._put_response_body([jobId], payload=payload)
         else:
-            resp = self._put_response_body(payload=payload)
+            resp = self._put_response_body([], payload=payload)
         return resp
 
     def deregister(self, region=None, jobId=None):

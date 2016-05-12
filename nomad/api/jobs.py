@@ -12,11 +12,11 @@ class Jobs(base.Endpoint):
 
     def register(self, region=None, payload=None):
         """Registers a new job
-        
+
         :rtype: dict
 
         """
-        return self._put_response_body(payload=payload)
+        return self._put_response_body([], payload=payload)
 
     def list(self):
         """Lists all the jobs registered with Nomad

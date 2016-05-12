@@ -94,6 +94,7 @@ class Endpoint(object):
                                  payload).status_code == 200
 
     def _put_response_body(self, url_parts, query=None, payload=None):
+        print self._build_uri(url_parts, query)
         return self._adapter.put(self._build_uri(url_parts, query),
                                  payload).body
 
