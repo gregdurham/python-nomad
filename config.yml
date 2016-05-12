@@ -1,0 +1,16 @@
+---
+cluster: use01
+
+db:
+    host: 127.0.0.1
+    user: use01
+    password: D3aNUpVskGFT
+    database: trizicuse01
+
+redis:
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+
+datadog:
+    api_key: f3c9bc32a997793ce385a1130c7f839f
